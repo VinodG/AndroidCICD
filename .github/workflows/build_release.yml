@@ -38,7 +38,8 @@ jobs:
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-          #  to get SIGNING_KEY >> openssl base64 < D:\AndroidStudioProjects\AndroidCICD\app\keystore\androidci.jks || tee some_signing_key.jks.base64.txt
+          #  to get SIGNING_KEY >>  openssl base64 < D:\AndroidStudioProjects\AndroidCICD\app\keystore\androidci.jks
+          # above command is to get Base64 from androidci.jks
       # 5
       - uses: actions/upload-artifact@master
         with:
