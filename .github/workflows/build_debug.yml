@@ -28,9 +28,12 @@ jobs:
           java-version: '11'
 
 
-      - name: Build Debug APK
+#      - name: Build Debug APK
 #        run: bash ./gradlew assembleDebug --stacktrace
-#        (or)
+#(or)
+      -name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Build with Gradle- Generate Apk
         run: ./gradlew build
 
       - name: Upload APK
