@@ -11,8 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.tv.setText("release ")
+        binding.tv.setText("release 2 ")
         println("fix2")
+
 
 
     }
